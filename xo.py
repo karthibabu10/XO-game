@@ -36,3 +36,31 @@ def play_game():
         print(winner + " won.")
     elif winner == None:
         print("Tie")
+
+# handle single turn of arbitrary player
+def handle_turn(player):
+
+  print(player+"'s turn.")
+
+  position = input("Choose a position from 1 to 9")
+
+  valid = False
+  while not valid:
+
+    while position not in ["1", "2", "3", "4", "5", "6","7", "8", "9"]:
+      position = input("Invalid input. Choose a position from 1 to 9")
+
+
+    position = int(position) - 1
+    if board[position] == "-":
+      valid = True
+    else:
+      print("You cant go there . Go again")
+
+  board[position] = player
+  display_board()
+
+
+def check_if_game_over():
+    check_for_win()
+    check_for_tie()
