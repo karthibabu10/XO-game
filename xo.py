@@ -64,3 +64,13 @@ def handle_turn(player):
 def check_if_game_over():
     check_for_win()
     check_for_tie()
+def check_for_win():
+
+  global winner 
+
+  #check rows
+  row_winner = check_rows()
+  #check columns
+  column_winner = check_columns()
+  #check diagonal
+  diagonal_winner = check_diagonals()
