@@ -85,3 +85,5 @@ if row_winner:
     winner = None
 
     return
+def check_diagonals():
+  global game_still_going
