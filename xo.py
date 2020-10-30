@@ -87,3 +87,5 @@ if row_winner:
     return
 def check_diagonals():
   global game_still_going
+diagonal_1 = board[0] == board[4] == board[8] !="-"
+  diagonal_2= board[6] == board[4] == board[2] !="-"
