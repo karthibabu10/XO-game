@@ -99,4 +99,9 @@ if diagonal_1 or diagonal_2:
   return
 def check_for_tie():
   global game_still_going
+ if "-" not in board:
+    game_still_going = False
+
+  return
+
 
