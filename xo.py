@@ -103,5 +103,15 @@ def check_for_tie():
     game_still_going = False
 
   return
+def flip_player():
 
+  global current_player
+  if current_player == "X":
+    current_player = "O"
+  elif current_player == "O":
+    current_player = "X"
+  return
+
+
+play_game()
 
