@@ -97,4 +97,6 @@ if diagonal_1 or diagonal_2:
     return board[1]
   
   return
+def check_for_tie():
+  global game_still_going
 
