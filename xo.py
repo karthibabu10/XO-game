@@ -89,3 +89,12 @@ def check_diagonals():
   global game_still_going
 diagonal_1 = board[0] == board[4] == board[8] !="-"
   diagonal_2= board[6] == board[4] == board[2] !="-"
+if diagonal_1 or diagonal_2:
+    game_still_going = False
+  if diagonal_1:
+    return board[0]
+  if diagonal_2:
+    return board[1]
+  
+  return
+
